@@ -12,7 +12,7 @@ The ALU performs operations such as addition, subtraction, logical AND, OR, shif
 
 ## Module Descriptions
 
-### 1. `alu.v`
+### 1. `alu`
 
 This is the top-level module that integrates all the operations.
 
@@ -28,7 +28,7 @@ This is the top-level module that integrates all the operations.
   - `isLessThan`: Flag indicating if `data_operandA` is less than `data_operandB`.
   - `overflow`: Flag indicating arithmetic overflow.
 
-### 2. `alu_adder.v`
+### 2. `alu_adder`
 
 Performs addition on two 32-bit operands.
 
@@ -36,7 +36,7 @@ Performs addition on two 32-bit operands.
   - `res`: Result of the addition.
   - `overflow`: Indicates if an overflow occurred.
 
-### 3. `alu_sub.v`
+### 3. `alu_sub`
 
 Performs subtraction and sets flags for inequality and less-than conditions.
 
@@ -46,22 +46,22 @@ Performs subtraction and sets flags for inequality and less-than conditions.
   - `isNotEqual`: Indicates if the operands are not equal.
   - `isLessThan`: Indicates if `data_operandA` is less than `data_operandB`.
 
-### 4. `alu_and.v`
+### 4. `alu_and`
 
 Performs a bitwise AND operation on two 32-bit operands.
 
-### 5. `alu_or.v`
+### 5. `alu_or`
 
 Performs a bitwise OR operation on two 32-bit operands.
 
-### 6. `alu_sll.v`
+### 6. `alu_sll`
 
 Performs a shift left logical operation.
 
 - **Inputs:**
   - `ctrl_shiftamt`: Determines the number of positions to shift.
 
-### 7. `alu_sra.v`
+### 7. `alu_sra`
 
 Performs a shift right arithmetic operation, preserving the sign bit.
 
